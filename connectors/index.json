@@ -1,6 +1,9 @@
 {
   "version": "0.1.0",
   "connectors": [
+    "gmail.json",
+    "google-calendar.json",
+    "teams.json",
     "atlassian.json",
     "github.json",
     "svelte.json",

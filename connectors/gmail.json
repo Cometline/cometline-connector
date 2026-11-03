@@ -1,0 +1,15 @@
+{
+  "id": "gmail",
+  "name": "Gmail",
+  "description": "Search mail, read threads, and create drafts.",
+  "verifiedAt": "2026-07-13",
+  "modes": [
+    {
+      "id": "remote",
+      "transport": "http",
+      "url": "https://gmailmcp.googleapis.com/mcp/v1",
+      "auth": "oauth-or-token",
+      "source": "https://developers.google.com/workspace/gmail/api/guides/configure-mcp-server"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "google-calendar",
+  "name": "Google Calendar",
+  "description": "Search events and schedule meetings.",
+  "verifiedAt": "2026-07-13",
+  "modes": [
+    {
+      "id": "remote",
+      "transport": "http",
+      "url": "https://calendarmcp.googleapis.com/mcp/v1",
+      "auth": "oauth-or-token",
+      "source": "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+    }
+  ]
+}
