@@ -1,0 +1,17 @@
+{
+  "id": "playwright",
+  "name": "Playwright",
+  "description": "Control a browser through the official Playwright MCP server.",
+  "verifiedAt": "2026-07-13",
+  "modes": [
+    {
+      "id": "local",
+      "transport": "stdio",
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"],
+      "auth": "none",
+      "requirements": ["node"],
+      "source": "https://playwright.dev/docs/getting-started-mcp"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "github",
+  "name": "GitHub",
+  "description": "Work with repositories, issues, pull requests, and Actions.",
+  "verifiedAt": "2026-07-13",
+  "modes": [
+    {
+      "id": "remote",
+      "transport": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "auth": "token",
+      "source": "https://github.com/github/github-mcp-server/blob/main/docs/installation-guides/install-cursor.md"
+    },
+    {
+      "id": "local",
+      "transport": "stdio",
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "ghcr.io/github/github-mcp-server"],
+      "auth": "oauth-or-token",
+      "requirements": ["docker"],
+      "source": "https://github.com/github/github-mcp-server/blob/main/docs/installation-guides/install-cursor.md"
+    }
+  ]
+}

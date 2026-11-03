@@ -1,0 +1,17 @@
+{
+  "id": "go",
+  "name": "Go",
+  "description": "Use the official gopls MCP server for the current Go workspace.",
+  "verifiedAt": "2026-07-13",
+  "modes": [
+    {
+      "id": "local",
+      "transport": "stdio",
+      "command": "gopls",
+      "args": ["mcp"],
+      "auth": "none",
+      "requirements": ["gopls"],
+      "source": "https://go.dev/gopls/features/mcp"
+    }
+  ]
+}

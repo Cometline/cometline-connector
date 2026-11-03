@@ -1,0 +1,10 @@
+{
+  "version": "0.1.0",
+  "connectors": [
+    "atlassian.json",
+    "github.json",
+    "svelte.json",
+    "go.json",
+    "playwright.json"
+  ]
+}

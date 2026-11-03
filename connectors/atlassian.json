@@ -1,0 +1,15 @@
+{
+  "id": "atlassian",
+  "name": "Atlassian",
+  "description": "Connect to Jira, Confluence, and other Atlassian Cloud products.",
+  "verifiedAt": "2026-07-13",
+  "modes": [
+    {
+      "id": "remote",
+      "transport": "http",
+      "url": "https://mcp.atlassian.com/v2/mcp",
+      "auth": "oauth-or-token",
+      "source": "https://github.com/atlassian/atlassian-mcp-server"
+    }
+  ]
+}

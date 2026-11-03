@@ -1,0 +1,24 @@
+{
+  "id": "svelte",
+  "name": "Svelte",
+  "description": "Get Svelte documentation and code guidance from the official MCP server.",
+  "verifiedAt": "2026-07-13",
+  "modes": [
+    {
+      "id": "remote",
+      "transport": "http",
+      "url": "https://mcp.svelte.dev/mcp",
+      "auth": "none",
+      "source": "https://svelte.dev/docs/ai/remote-setup"
+    },
+    {
+      "id": "local",
+      "transport": "stdio",
+      "command": "npx",
+      "args": ["-y", "@sveltejs/mcp"],
+      "auth": "none",
+      "requirements": ["node"],
+      "source": "https://svelte.dev/docs/ai/local-setup"
+    }
+  ]
+}
