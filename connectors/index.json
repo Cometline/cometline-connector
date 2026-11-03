@@ -3,6 +3,9 @@
   "connectors": [
     "gmail.json",
     "google-calendar.json",
+    "vercel.json",
+    "supabase.json",
+    "fly.json",
     "atlassian.json",
     "github.json",
     "svelte.json",

@@ -1,0 +1,16 @@
+{
+  "id": "vercel",
+  "name": "Vercel",
+  "description": "Search docs, manage projects, and inspect deployments.",
+  "iconSvg": "<svg role=\"img\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><title>Vercel</title><path d=\"m12 1.608 12 20.784H0Z\"/></svg>",
+  "verifiedAt": "2026-11-03",
+  "modes": [
+    {
+      "id": "remote",
+      "transport": "http",
+      "url": "https://mcp.vercel.com",
+      "auth": "oauth-or-token",
+      "source": "https://vercel.com/docs/agent-resources/vercel-mcp"
+    }
+  ]
+}
