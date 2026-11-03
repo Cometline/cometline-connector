@@ -11,12 +11,30 @@ Each connector also has one file in `connectors/`. `connectors/index.json` lists
 ## Add a connector
 
 1. Add official direct connection details only. Do not add `api.cursor.com` or another vendor proxy.
-2. Include `iconSvg` as a complete `<svg>` element.
+2. Include `iconSvg` as a complete `<svg>` element. Use the colorful default logo, not a black silhouette. See [Icons](#icons).
 3. Use `https://` for remote endpoints.
 4. Use the provider's documented command for local servers.
 5. Set `auth` to `none`, `token`, or `oauth-or-token`.
 6. Run `python3 scripts/verify_catalog.py --handshake --tools`.
 7. Open a pull request. GitHub Actions must pass before the connector reaches Cometline.
+
+## Icons
+
+Use the colorful default brand logo. Do not store a black or monochrome silhouette.
+
+Take the icon from theSVG's `default` variant:
+
+```text
+https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/{slug}/default.svg
+```
+
+Do not use Simple Icons, or any other single-color black SVG. Those render as a black picture in Cometline.
+
+- `iconSvg` must be one complete `<svg>` element.
+- Put the brand color on the shapes. Cometline sets `fill: currentColor` on the `<svg>` element, so a fill only on that tag is ignored and the icon turns black.
+- Prefix gradient and clip-path ids with the connector id, such as `gmail-a`. Several icons render on one page, and duplicate ids mix up the colors.
+- If `default.svg` is white because it is meant for a dark background, use the same artwork in the brand color so it stays visible on the light settings card. Vercel's default file is white; use the black triangle. Go's default file is a white wordmark; use that artwork in `#00ADD8`. Fly.io's colorful logo is `fly/default.svg`, not `fly-io` or `flydotio`.
+- GitHub, Notion, and Vercel publish a black mark. Keep that mark. Do not invent a color for them.
 
 ## Verification levels
 
