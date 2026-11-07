@@ -14,6 +14,7 @@
     "cloudflare.json",
     "atlassian.json",
     "github.json",
+    "heptabase.json",
     "svelte.json",
     "go.json",
     "playwright.json"
