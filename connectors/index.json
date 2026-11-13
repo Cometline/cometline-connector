@@ -17,6 +17,7 @@
     "heptabase.json",
     "svelte.json",
     "go.json",
-    "playwright.json"
+    "playwright.json",
+    "readwise.json"
   ]
 }
